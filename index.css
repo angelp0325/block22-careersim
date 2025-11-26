@@ -1,0 +1,73 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+#main-container {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+#roster-section,
+#details-section {
+  flex: 1;
+}
+
+#roster {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.puppy-card {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  border: 2px dashed black;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.puppy-card img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.puppy-card:hover {
+  background-color: #f0f0f0;
+  font-weight: bold;
+}
+
+#details img {
+  width: 200px;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+#form-section {
+  margin-top: 30px;
+  width: 300px;
+}
+
+#new-puppy-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#new-puppy-form input,
+#new-puppy-form select,
+#new-puppy-form button {
+  padding: 8px;
+  font-size: 14px;
+}
+
+button {
+  cursor: pointer;
+  border: 1px solid black;
+  border-radius: 4px;
+}
