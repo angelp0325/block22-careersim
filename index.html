@@ -1,12 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title></title>
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Puppy Bowl 🐶🏈</title>
     <link rel="stylesheet" href="index.css" />
-    <script src="index.js" defer></script>
   </head>
   <body>
-    <div id="app"></div>
+    <h1>Puppy Bowl Roster 🏆</h1>
+
+    <main id="main-container">
+      <section id="roster-section">
+        <h2>Roster</h2>
+        <div id="roster"></div>
+      </section>
+
+      <section id="details-section">
+        <h2>Puppy Details</h2>
+        <div id="details"></div>
+      </section>
+    </main>
+
+    <section id="form-section">
+      <h3>Invite a puppy</h3>
+      <form id="new-puppy-form">
+        <label>Name</label>
+        <input type="text" id="name" required />
+
+        <label>Breed</label>
+        <input type="text" id="breed" required />
+
+        <label>Status</label>
+        <select id="status">
+          <option value="bench">Bench</option>
+          <option value="field">Field</option>
+        </select>
+
+        <label>Image URL</label>
+        <input type="url" id="imageUrl" placeholder="https://..." />
+
+        <button type="submit">Invite puppy</button>
+      </form>
+    </section>
+
+    <script src="index.js"></script>
   </body>
 </html>
